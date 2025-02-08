@@ -1,0 +1,183 @@
+/* 🌙 Dark Mode Theme */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents scroll */
+}
+
+/* 🎨 Container with Glassmorphism */
+.container {
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.3);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Hover effect for container */
+.container:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 30px rgba(0, 255, 255, 0.5);
+}
+
+/* 📝 Headings */
+h1 {
+    color: #00e6e6;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+    animation: fadeIn 1.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Brain Icon Next to Title */
+h1::before {
+    content: "🧠 ";
+    font-size: 1.2em;
+    animation: bounce 1.5s infinite alternate ease-in-out;
+}
+
+/* 📁 File Upload */
+input[type="file"] {
+    margin: 15px 0;
+    padding: 12px;
+    border-radius: 8px;
+    background: #1e1e1e;
+    color: #00e6e6;
+    border: 2px solid #00e6e6;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* 🚀 Detect & Verify Buttons */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 14px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #00e6e6, #007BFF);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.5);
+}
+
+/* 💡 Button Hover Effects */
+button:hover {
+    background: linear-gradient(45deg, #007BFF, #00e6e6);
+    transform: scale(1.08);
+    box-shadow: 0 0 18px rgba(0, 255, 255, 0.7);
+}
+
+/* Button Click Effect */
+button:active {
+    transform: scale(0.95);
+}
+
+/* 🟢 Result Box */
+#result {
+    margin-top: 25px;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 8px;
+    display: inline-block;
+    min-width: 250px;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+}
+
+/* ✅ Green result for authentic images */
+.result-authentic {
+    background: rgba(0, 255, 0, 0.2);
+    color: #00ff00;
+    box-shadow: 0 0 12px rgba(0, 255, 0, 0.5);
+    animation: glow 1.5s infinite alternate ease-in-out;
+}
+
+/* ⚠️ Red result for deepfakes */
+.result-deepfake {
+    background: rgba(255, 0, 0, 0.2);
+    color: #ff3333;
+    box-shadow: 0 0 12px rgba(255, 0, 0, 0.5);
+    animation: shake 0.5s infinite alternate ease-in-out;
+}
+
+/* 🔥 Cool Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-5px); }
+}
+
+/* 📸 Animations for Result */
+@keyframes glow {
+    0% { box-shadow: 0 0 12px rgba(0, 255, 0, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(0, 255, 0, 0.8); }
+    100% { box-shadow: 0 0 12px rgba(0, 255, 0, 0.5); }
+}
+
+@keyframes shake {
+    0% { transform: translateX(0px); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0px); }
+}
+/* 📝 Stylish Text Area */
+textarea {
+    width: 80%;
+    height: 120px; /* Increased for better readability */
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: #000404;
+    border: 2px solid transparent;
+    transition: all 0.4s ease-in-out;
+    outline: none;
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.2);
+    text-align: left;
+    resize: none;
+}
+
+/* 📜 Placeholder Styling */
+textarea::placeholder {
+    color: rgba(17, 22, 22, 0.5);
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* 💡 Focus Effect */
+textarea:focus {
+    border: 2px solid #00e6e6;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+    transform: scale(1.02);
+}
+
+/* 🔥 Hover Effect */
+textarea:hover {
+    border: 2px solid #007BFF;
+    box-shadow: 0 0 18px rgba(0, 119, 255, 0.5);
+}

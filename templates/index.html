@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Detection Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 AI Detection System</h1>
+
+        <!-- 📸 Image Upload for Deepfake Detection -->
+        <h2>Deepfake Detection</h2>
+        <input type="file" id="imageInput" accept="image/*">
+        <button onclick="detectDeepfake()">🔍 Detect Deepfake</button>
+        <p id="deepfakeResult"></p>
+
+        <hr>
+
+        <!-- 📰 Fake News Detection -->
+        <h2>Fake News Verification</h2>
+        <textarea id="newsInput" rows="4" placeholder="Enter news text here..."></textarea>
+        <button onclick="verifyNews()">🔍 Verify News</button>
+        <p id="newsResult"></p>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
