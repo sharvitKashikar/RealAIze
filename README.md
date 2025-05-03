@@ -37,9 +37,7 @@ We utilized Natural Language Processing (NLP) models to:
 
 While our model has shown **promising results**, there were occasional inconsistencies in accuracy due to noise and imbalance in the dataset. With further refinements and access to more curated data, the system's **reliability and precision** will significantly improve.
 
-## 📦 Repository
 
-Explore the full codebase here: [GitHub Repository](https://lnkd.in/gq9UYXJc)
 
 ## 🏆 Acknowledgments
 
