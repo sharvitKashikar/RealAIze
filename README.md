@@ -50,7 +50,8 @@ A heartfelt thanks to:
 ## 🚀 Team LocalHost:3000
 
 - Sharvit Kashikar  
-- [Add other teammates here]
+- Mrudul Rajguire
+- Rohit Mandal
 
 ## 📌 Future Work
 
