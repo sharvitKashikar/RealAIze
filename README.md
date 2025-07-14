@@ -1,6 +1,6 @@
 # RealAIze - Deepfake Image & Fake News Detection 🚨📰
 
-**RealAIze** is a powerful AI-based system developed during **CyberHack 2025**, a cybersecurity hackathon organized by **Nagpur City Police**, **Advantage Vidarbha**, and **DeCoDe Community**. Our team, **LocalHost:3000**, took on the challenge of combating digital misinformation by detecting deepfake images and fake news articles using cutting-edge machine learning techniques.
+✨ RealAIze is an AI-powered detection system built during CyberHack 2025, a premier cybersecurity hackathon hosted by Nagpur City Police, Advantage Vidarbha, and DeCoDe Community. As Team LocalHost:3000, we tackled the rising threat of digital misinformation by creating a smart tool that spots deepfake images and fake news stories using advanced machine learning and NLP pipelines — giving users fast, reliable credibility checks at their fingertips.
 
 ## 🔍 Problem Statement
 
